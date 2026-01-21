@@ -1,0 +1,2 @@
+# Anomaly-Detection-using-Unsupervised-Machine-Learning
+This application demonstrates our thesis project: Design of Machine Learning-Based Anomaly Detection for a Centralized Hub in Water Quality Analysis.It allows users to input water quality parameters or upload sensor data, and the trained machine learning model will identify potential anomalies that may indicate contamination or irregularities.
