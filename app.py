@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 
 # Load separate models for each parameter
 models = {
-    "pH": joblib.load("model_ph.joblib"),
-    "Flowrate": joblib.load("model_flowrate.joblib"),
-    "WaterLevel": joblib.load("model_waterlevel.joblib"),
-    "Turbidity": joblib.load("model_turbidity.joblib"),
-    "WaterTemperature": joblib.load("model_temperature.joblib"),
+    "pH": joblib.load("IF_pH_level.joblib"),
+    "Flowrate": joblib.load("IF_flow_rate.joblib"),
+    "WaterLevel": joblib.load("IF_water_level.joblib"),
+    "Turbidity": joblib.load("IF_turbidity.joblib"),
+    "WaterTemperature": joblib.load("IF_temperature.joblib"),
 }
 
 # App title and description
