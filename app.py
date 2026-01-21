@@ -30,7 +30,9 @@ if uploaded_file is not None:
     st.write("### Uploaded Data Preview")
     st.dataframe(data.head())
 
-    required_cols = list(models.keys())
+    # Normalize column names (strip spaces, lowercase) 
+    data.columns = data.columns.str.strip().str.lower() 
+    required_cols = ["ph", "flowrate", "waterlevel", "turbidity", "watertemperature"]
 
     if all(col in data.columns for col in required_cols):
         if st.button("Run Anomaly Detection"):
